@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html> 
+
+<head>
+    <title>Quotes</title> 
+    <style>
+.textStyle {
+    font-family: iawriter-mono, Nitti, Menlo, Courier, monospace;
+    font-size: medium;
+    color: rgb(55, 53, 47);
+    text-align: center;
+    line-height: 5;
+
+}
+
+body{
+    background: rgba(235, 236, 237, 0.3)
+}
+    </style>
+</head>
+<body>
+    <div id="lbl" class="textStyle" ></div>
+</body>
+
+<script type="text/javascript">
+    var quoteArray = []
+    quoteArray[0] = "💩 Money is like manure. You have to spread it around or it smells. 🥴"
+    quoteArray[1] = "🦕 How do dinosaurs pay their bills? With Tyrannosaurus checks! 🦖"
+    quoteArray[2] = "🐸 Where do frogs deposit their money? In a river bank. 🤣"
+    quoteArray[3] = "🐧 Where do penguins keep their money? In snowbanks. ❄️"
+    quoteArray[4] = "🐃  What do you call it when you lend money to a bison? Buff-a-loan! 🤣"
+    quoteArray[5] = "🦆 What did the duck say after he went shopping? Put it on my bill!. 🤣"
+    quoteArray[6] =  "🍞 Why is money called dough? Because we all knead it. 🥖"
+
+    var currentdate = new Date();
+    var quotenumber = currentdate.getDay();
+    document.getElementById('lbl').innerHTML = `<div><b> ${quoteArray[quotenumber]}</b></div>`;
+
+</script> 
+</html>
