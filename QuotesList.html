@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html> 
+
+<head>
+    <title>Quotes</title> 
+    <style>
+.textStyle {
+    font-family: iawriter-mono, Nitti, Menlo, Courier, monospace;
+    font-size: medium;
+    color: rgb(55, 53, 47);
+    text-align: center;
+    line-height: 5;
+
+}
+
+body{
+    background: rgba(235, 236, 237, 0.3)
+}
+    </style>
+</head>
+<body>
+    <div id="lbl" class="textStyle" ></div>
+</body>
+
+<script type="text/javascript">
+    var quoteArray = []
+    quoteArray[0] = "<q/> Abby 'Monster Fucker' Callas <q/> - Aiden"
+
+    var currentdate = new Date();
+    var quotenumber = currentdate.getDay();
+    document.getElementById('lbl').innerHTML = `<div><b> ${quoteArray[quotenumber]}</b></div>`;
+
+</script> 
+</html>
